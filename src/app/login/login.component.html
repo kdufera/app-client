@@ -1,0 +1,19 @@
+<div class = "main-container">
+        <p id="logo-title"> Login</p>
+        <mat-card class = "login-form" >
+                <form  ngNativeValidate (ngSubmit)="onSubmit(f)" #f="ngForm">   
+                        <div class="form-group"> 
+                            <input type="email" id="email" placeholder="Email"  name="email" ngModel maxlength="30" 
+                            pattern="[a-zA-Z0-9_.\s!$%@^&*/:\-+=]*" class="form-control" required/> 
+                        </div>
+                        <div class="form-group"> 
+                            <input type="password" id="password" placeholder="Password"  name="password" ngModel  
+                            maxlength="12" class="form-control" required/> 
+                        </div>
+                        <div id="login-button-container"  style="text-align:center;">
+                            <button mat-raised-button  id="button-login" type="submit" class="btn" value="send">LOG IN</button>
+                        </div>
+                </form>
+                <br>  
+        </mat-card>
+</div>

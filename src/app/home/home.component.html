@@ -1,0 +1,58 @@
+
+<div class="logout-button-container">
+    <button id="button-logout" type="submit"  class="btn" (click) = "logout()">Logout</button>
+</div>
+<div class="container"> 
+    <div class="spinner-container" *ngIf = "displaySpinner">
+        <div class="spinner-border text-secondary" role="status">
+        </div>
+    </div>
+    <mat-card class = "main-view" *ngIf ="displayMainView" >
+        <p id="home-info" style="text-align:center;">
+            Welcome to the home page. This application interacts with different Microserviecs to store and process user data. 
+            
+        <p id="home-info" style="text-align:center;">
+            You can click on the images below and upload your favorite animal image URL.Make sure all Microserviecs are up and running. No worries, all url's are bring validated!
+        </p>
+        <p id="home-info" style="text-align:center; padding-top: 20px">
+             Make sure all the Microserviecs are up and running. Click on the image to upload the URL.
+        </p>
+        <div id="image-container"> 
+            <img id="icons" src="/assets/cat.png" (click)="processImageUrl('Cat')" >
+            <img id="icons" src="/assets/dog.png" (click)="processImageUrl('Dog')" >
+            <img id="icons" src="/assets/bird.png" (click)="processImageUrl('Bird')" >
+            <img id="icons" src="/assets/spider.png" (click)="processImageUrl('Spider')">
+            <img id="icons" src="/assets/rat.png" (click)="processImageUrl('Rat')">
+            <img id="icons" src="/assets/ant.png" (click)="processImageUrl('Ant')">
+        </div>
+        <div class="form-container" *ngIf = "displayUrlForm"> 
+            <form  ngNativeValidate (ngSubmit)="onSubmit(f)" #f="ngForm">   
+                <div class="url-error" *ngIf = "displayError"> 
+                    <p id="error-message"> Please enter a valid URL</p>
+                </div>
+                <div class="form-group"> 
+                    <mat-form-field class="example-full-width">
+                        <mat-label>{{selectedUrlType}} url</mat-label>
+                            <input (keyup)="validateUrl($event)"matInput type="text" id="url" name="url" ngModel maxlength="100" 
+                                    pattern="[a-zA-Z0-9_.\s!$%@^&*/:\-+=]*" class="form-control" required/> 
+                        </mat-form-field>
+
+                </div>
+                <div id="login-button-container"  style="text-align:center;">
+                    <button mat-raised-button  id="button-login" type="submit"  [disabled]="!submitButtonState" 
+                    class="btn" value="send">Submit</button>
+                </div>
+            </form>
+            
+        </div>
+    </mat-card>
+    
+    <div class="sub-container" *ngIf ="displayFinalView"> 
+        <mat-card class = "thank-you-view" >
+                <p id="thank-you-info">
+                    Thank you. you image URL has been submitted!
+                </p> 
+        </mat-card>
+    </div>
+</div>
+

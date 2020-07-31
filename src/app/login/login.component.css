@@ -1,0 +1,53 @@
+.main-container {
+    margin-top:15%;
+    background-repeat:no-repeat;
+    background-size:cover;
+    position: relative;
+    margin-right:33%;
+    margin-left: 33%;
+    height: 100%;
+}
+
+.login-form {
+    padding-top: 7%;
+    margin: auto;
+    width: 80%;
+    height:90%; 
+}
+
+#login-button-container {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+#button-login  {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 15px;
+    position: center;
+    background-color: rgb(22, 33, 83);
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.form-group {
+    padding-right: 30px;
+    padding-left: 30px;
+
+}
+
+#logo-title {
+    color: black;
+    font-size: 46px;
+    text-align: center;
+    color: rgb(61, 173, 126);
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    padding-bottom: 10px;
+}

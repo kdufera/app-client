@@ -1,0 +1,102 @@
+.container {
+    padding-top: 7%;
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.logout-button-container {
+    padding: 10px;
+    text-align: right;
+}
+
+#error-message {
+
+    font-size: 15px;
+    position: center;
+    color: rgb(255, 0, 0);
+    font-family: 'Raleway', sans-serif; 
+    font-weight: bolder;
+}
+
+.main-view {
+    padding-top: 5%;
+    padding-bottom: 6%;
+    padding-right: 6%;
+    padding-left: 6%;
+}
+
+#image-container:hover {
+    cursor: pointer;
+    color: orange;
+  }
+
+#icons {
+    width: 90px;
+    height: 75px;
+    padding-right: 15px;
+}
+
+#image-container {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.spinner-container {
+    padding-top: 15%;
+    text-align: center;
+}
+
+#button-login  {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 15px;
+    position: center;
+    background-color: rgb(28, 29, 23);
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    width: 25%;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#button-logout {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 15px;
+    position: center;
+    background-color: rgb(158, 47, 47);
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;  
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.thank-you-view {
+    padding-top: 12%;
+    padding-bottom: 12%;
+    padding-right: 6%;
+    padding-left: 6%;
+    text-align: center;
+}
+.sub-container {
+    width: 100%;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 10px;
+}
+
+.form-container {
+    padding-top: 50px;
+    width: 85%; 
+    padding-left: 15%;
+}
+.example-full-width {
+    width: 100%;
+}
