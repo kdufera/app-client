@@ -12,7 +12,7 @@ export class HomeService {
     const token:string = this.cookieService.get('token');
     let headers = new Headers();
         headers.append('Content-Type', 'application/json');
-        return this.http.post('http://localhost:4000/api/v1/image/saveImage',userData).toPromise().then((resp) => {
+        return this.http.post('http://localhost:4000/api/v1/profile/saveProfile',userData).toPromise().then((resp) => {
             if(resp.status == 200) {
               return Promise.resolve(resp);
             } else {
